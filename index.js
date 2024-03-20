@@ -30,8 +30,10 @@ $('#payment').click(()=>{
    let ipaddress = $("#ip_address").val();
    let payment = $("#payamt").val();
    let buyoldamt = $("#buyoldamt").val();
+   let emform = $("#email").val();
     set(ref(db, 'buyer/'), {
         username: name,
+        email:emform,
         id_buyer: idbuyer,
         ip_address: ipaddress,
         payamt: payment,
